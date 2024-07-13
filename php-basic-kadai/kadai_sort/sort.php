@@ -31,6 +31,8 @@
         }    
       }
 
+      sort_2way($array, TRUE);
+
       sort_2way($array, FALSE);
 
 
