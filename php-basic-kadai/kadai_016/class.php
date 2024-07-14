@@ -20,7 +20,8 @@
 
         //priceプロパティの値を出力するメソッド
         public function show_price() {
-          return $this->price;
+          //return $this->price;
+          echo $this->price . "<br>";
         }
       }
 
@@ -28,9 +29,10 @@
       $food = new Food("potato", 250);
       print_r($food);
       echo "<br>";
+      echo $food->show_price() . "<br>";
 
       //プロパティにアクセスし、値を出力する   
-      echo $food->show_price() . "<br>";
+      //echo $food->show_price() . "<br>";
 
       /////////////////////////////////////////////////////////////////////////
 
@@ -50,7 +52,8 @@
         }
 
         public function show_height() {
-          return $this->height;
+          //return $this->height;
+          echo $this->height . "<br>";
         }
       }
 
@@ -58,9 +61,10 @@
       $animal = new Animal("dog", 60, 5000);
       print_r($animal);
       echo "<br>";
+      echo $animal->show_height();
 
       //プロパティにアクセスし、値を出力する 
-      echo $animal->show_height();
+      //echo $animal->show_height();
      
       ?>
     </p>
